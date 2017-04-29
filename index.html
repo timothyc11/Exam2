@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Exam 2 Problem: Timothy Coleman</title>
+     <link rel="stylesheet" type="text/css" href="styles/Exam2problem.css" />
+        <script src="js/Exam2problem.js"></script>
+    </head>
+
+<body>
+
+
+<section id ="Title">
+        <h1>Customer Data</h1>
+        <hr>
+        
+        <select onchange="MenuChoice()" id="menu">
+            <option>Please select an option.</option>
+            <option>Display Category List</option>
+            <option>Add Product Category</option>
+            <option>Change Category Description</option>
+            <option> Delete Category</option>
+            <option>About Me</option>
+        </select>     
+    </section>
+
+
+    <section id="list1" class="list1" >
+             <body onload="CList()">
+                <label id ="CategoryList"></label>
+    </section>
+
+
+<section id="add2" class="add2">
+    <label>Please enter new Category name:</label>
+    <input type="text" id="cname">
+    <br>
+    <label>Please enter Category Description:</label>
+    <input type="text" id="descrip2">
+    <br>
+    <button onclick="AddCategory()" id="add">Add Category</button>
+    <hr>
+    <br>
+    <label id="result2">The result will display here.</label>
+
+</section>
+
+
+<section id="change3" class="change3">
+    <label>Please enter a Category ID:</label>
+    <input type="text" id="cID">
+    <br>
+    <label>Please enter a new Category Description:</label>
+    <input type="text" id="descrip3">
+    <br>
+    <button onclick="ChangeDescription()" id="description">Update Description</button>
+    <hr>
+    <br>
+    <label id="result3">The result will display here.</label>
+</section>
+
+
+<section id="delete4" class="delete4">
+    <label>Please enter a Category ID:</label>
+    <input type="text" id="cID2">
+    <br>
+    <button onclick="DeleteCategory()" id="delete">Delete Category</button>
+    <hr>
+    <br>
+    <label id="result4">The result will display here.</label>
+
+</section>
+
+
+<section id="about5" class="about5">
+<h1>About Me</h1>
+
+I am Timothy Coleman from Montgomery, AL and will be graduating in 2018 as an Information Sytems major.
+
+</section>
+
+
+
+
+
+
+</body>
+</html>
